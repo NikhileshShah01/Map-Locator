@@ -20,7 +20,7 @@ url=f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api}"
 response=requests.get(url)
 x=response.json()
     
-if(st.button("SUBMIT")):
+if(st.button("GET MAP")):
     try:
         lon=x["coord"]["lon"]
         lat=x["coord"]["lat"]
