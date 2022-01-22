@@ -3,7 +3,7 @@ import streamlit.components.v1 as components
 import folium,requests
 st.set_page_config(page_title='Nikhilesh Shah', page_icon=":earth_asia:")
 st.title("Map Locator ")
-city=st.text_input("ENTER THE NAME OF THE CITY ")
+city=st.text_input("ENTER THE NAME OF THE CITY 🗺️ ")
 st.markdown(
     """
     <style>
