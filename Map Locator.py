@@ -1,6 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components 
 import folium,requests
+st.set_page_config(page_title='Nikhilesh Shah', page_icon=":earth_asia:")
 st.title("Map Locator ")
 city=st.text_input("ENTER THE NAME OF THE CITY ")
 st.markdown(
@@ -24,10 +25,10 @@ if(st.button("SUBMIT")):
         lon=x["coord"]["lon"]
         lat=x["coord"]["lat"]
         map=folium.Map(location=[lat,lon])
-        folium.Marker([lat,lon],popup=city).add_to(map)
+        folium.Marker([lat,lon],popup=city.title()).add_to(map)
         map.save("map.html")
         HtmlFile = open("map.html", 'r', encoding='utf-8')
         source_code = HtmlFile.read() 
         components.html(source_code, height=400)
     except:
-        st.warning("INVALID CITY")
+        st.warning("OOPS!! INVALID CITY TRY AGAIN ")
