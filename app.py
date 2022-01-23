@@ -4,16 +4,16 @@ import folium,requests
 st.set_page_config(page_title='Nikhilesh Shah', page_icon=":earth_asia:")
 st.title("Map Locator :world_map:")
 city=st.text_input("ENTER THE NAME OF THE CITY")
-st.markdown(
-    """
-    <style>
-    .reportview-container 
-    {
-        background: url("http://www.dreamtemplate.com/dreamcodes/bg_images/color/c12.jpg"  }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+page_bg_img = '''
+<style>
+body {
+background-image: url("http://www.dreamtemplate.com/dreamcodes/bg_images/color/c12.jpg");
+background-size: cover;
+}
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
 api="9b833c0ea6426b70902aa7a4b1da285c"
 url=f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api}"
 response=requests.get(url)
