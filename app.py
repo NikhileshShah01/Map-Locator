@@ -7,10 +7,10 @@ city=st.text_input("ENTER THE NAME OF THE CITY")
 st.markdown(
     """
     <style>
-    .reportview-container {
+    .reportview-container 
+    {
         background: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.dreamtemplate.com%2Fdreamcodes%2Fbg_images%2Fcolor%2Fc12.jpg&f=1&nofb=1")
-    }
-  
+        }
     </style>
     """,
     unsafe_allow_html=True
