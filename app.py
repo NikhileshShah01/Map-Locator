@@ -9,7 +9,7 @@ st.markdown(
     <style>
     .reportview-container 
     {
-        background: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.dreamtemplate.com%2Fdreamcodes%2Fbg_images%2Fcolor%2Fc12.jpg&f=1&nofb=1")
+        background: url("http://www.dreamtemplate.com/dreamcodes/bg_images/color/c12.jpg")
         }
     </style>
     """,
