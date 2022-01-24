@@ -30,4 +30,4 @@ if(st.button("GET MAP")):
         source_code = HtmlFile.read() 
         components.html(source_code, height=400)
     except:
-        st.warning("OOPS!! INVALID CITY TRY AGAIN ")
+        st.error("OOPS!! INVALID CITY TRY AGAIN ")
