@@ -8,7 +8,6 @@ page_bg_img = '''
 <style>
 body {
 background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
-background-size: cover;
 }
 </style>
 '''
