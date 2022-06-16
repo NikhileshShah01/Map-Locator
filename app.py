@@ -7,7 +7,7 @@ city=st.text_input("ENTER THE NAME OF THE CITY")
 page_bg_img = '''
 <style>
 body {
-background-image: url("https://www.xmple.com/wallpaper/blue-pink-linear-gradient-1920x1080-c2-db7093-40e0d0-a-165-f-14.svg");
+background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
 background-size: cover;
 }
 </style>
