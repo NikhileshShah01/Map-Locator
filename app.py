@@ -1,7 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components 
 import folium,requests
-st.set_page_config(page_title='Nikhilesh Shah', page_icon=":earth_asia:")
+st.set_page_config(page_title='Nik Maps', page_icon=":earth_asia:")
 st.title("Map Locator :world_map:")
 city=st.text_input("ENTER THE NAME OF THE CITY")
 page_bg_img = '''
