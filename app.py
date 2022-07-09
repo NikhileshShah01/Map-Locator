@@ -6,8 +6,9 @@ st.title("Map Locator :world_map:")
 city=st.text_input("ENTER THE NAME OF THE CITY")
 page_bg_img = '''
 <style>
-body {
-background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+.stApp,.e8zbici2 {
+background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+background-size: cover;
 }
 </style>
 '''
@@ -29,4 +30,4 @@ if(st.button("GET MAP")):
         source_code = HtmlFile.read() 
         components.html(source_code, height=400)
     except:
-        st.error("OOPS!! INVALID CITY TRY AGAIN ")
+        st.warning("OOPS!! INVALID CITY TRY AGAIN ")
