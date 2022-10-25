@@ -6,7 +6,7 @@ st.title("Map Locator :world_map:")
 city=st.text_input("ENTER THE NAME OF THE CITY")
 page_bg_img = '''
 <style>
-.stApp {
+.resize-triggers {
 background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
 background-size: cover;
 }
